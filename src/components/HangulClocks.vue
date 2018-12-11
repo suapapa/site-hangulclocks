@@ -49,7 +49,21 @@
           text: 'awesome-vuetify',
           href: 'https://github.com/vuetifyjs/awesome-vuetify'
         }
-      ]
+      ],
+      hangulclocks: [
+        {
+          title: '너가 있어 아름다운 오늘, 한글시계',
+          author: "이상훈",
+          image: 'assets/hangulclock_sanghunlee.png',
+          href: 'https://hangulclock.today/'
+        },
+        {
+          title: '한글시계(HangulClock)',
+          author: "이호민",
+          image: 'hangulclock_hominlee.jpg',
+          href: 'https://github.com/suapapa/hangulclock'
+        },
+    ]
     })
   }
 </script>
