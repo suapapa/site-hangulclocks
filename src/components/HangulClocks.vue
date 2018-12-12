@@ -67,6 +67,12 @@
           href: 'https://www.wadiz.kr/web/campaign/detail/1240'
         },
         {
+          title: '한글시계 만들기',
+          author: "만들마루",
+          image: require('../assets/hangulclock_mandulmaru.jpeg'),
+          href: 'https://blog.naver.com/mandulmaru/221413981408'
+        },
+        {
           title: '한글 시계 만들기',
           author: "kocoafab",
           image: require('../assets/hangulclock_kocoafab.jpg'),

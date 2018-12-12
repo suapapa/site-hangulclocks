@@ -3,9 +3,10 @@
     <v-toolbar app>
       <v-toolbar-title class="headline">
         <span>HangulClocks</span>
-        <span class="font-weight-light">다른 분들의 한글시계들</span>
+        <span class="font-weight-light">여러 분들의 한글시계들</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
+      <!--
       <v-btn
         flat
         href="https://github.com/vuetifyjs/vuetify/releases/latest"
@@ -13,6 +14,7 @@
       >
         <span class="mr-2">Latest Release</span>
       </v-btn>
+      -->
     </v-toolbar>
 
     <v-content>
