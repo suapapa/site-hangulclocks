@@ -51,11 +51,23 @@
           href: 'https://hangulclock.today/'
         },
         {
+          title: '제목: 세운(시) 여러분(계)',
+          author: 'Space_바421',
+          image: require('../assets/hangulclock_sewoon.webp'),
+          href: 'http://yovisong.wixsite.com/spaceba4/2016-11-homo-laborans'
+        },
+        {
+          title: '한글시계 - 한글로 흐르는 시간의 아름다움',
+          author: '대디스랩x이카루스',
+          image: require('../assets/hangulclock_dlab.jpg'),
+          href: 'https://www.wadiz.kr/web/campaign/detail/1240'
+        },
+        {
           title: '한글시계(HangulClock)',
           author: "이호민",
           image: require('../assets/hangulclock_hominlee.jpg'),
           href: 'https://github.com/suapapa/hangulclock'
-        },
+        }
     ]
     })
   }
