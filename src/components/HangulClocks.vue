@@ -55,6 +55,12 @@
           href: 'https://hangulclock.today/'
         },
         {
+          title: '한글시계 for Android',
+          author: '이준희',
+          image: require('../assets/hangulclock_junheelee.png'),
+          href: 'https://play.google.com/store/apps/details?id=com.leejoonhee.hangulclockforandroid'
+        },
+        {
           title: '제목: 세운(시) 여러분(계)',
           author: 'Space_바421',
           image: require('../assets/hangulclock_sewoon.webp'),
