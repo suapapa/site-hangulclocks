@@ -11,13 +11,17 @@
 
           <v-card-title primary-title>
             <div>
-              <h3 class="headline mb-0">{{ clk.title }}</h3>
-              <div>{{ clk.author }}</div>
+              <h3 class="headline mb-0"><b>{{ clk.title }}</b> - {{ clk.author }}</h3>
+              <!-- <pre>{{ clk.author }}</pre> -->
             </div>
           </v-card-title>
 
           <v-card-actions>
-            <v-btn flat color="orange">Site</v-btn>
+            <v-spacer></v-spacer>
+            <v-btn color="primary" fab small dark :href="`${clk.href}`" target="_blank">
+              <v-icon>home</v-icon>
+            </v-btn>
+
           </v-card-actions>
         </v-card>
       </v-flex>
@@ -61,6 +65,12 @@
           author: '대디스랩x이카루스',
           image: require('../assets/hangulclock_dlab.jpg'),
           href: 'https://www.wadiz.kr/web/campaign/detail/1240'
+        },
+        {
+          title: '한글 시계 만들기',
+          author: "kocoafab",
+          image: require('../assets/hangulclock_kocoafab.jpg'),
+          href: 'https://kocoafab.cc/make/view/508'
         },
         {
           title: '한글시계(HangulClock)',
