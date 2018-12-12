@@ -2,8 +2,8 @@
   <v-app>
     <v-toolbar app>
       <v-toolbar-title class="headline">
-        <span>HangulClocks</span>
-        <span class="font-weight-light">여러 분들의 한글시계들</span>
+        <span>HangulClocks </span>
+        <span class="font-weight-light">여러 분들의 한글시계</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <!--
