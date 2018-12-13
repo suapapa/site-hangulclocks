@@ -20,7 +20,17 @@
     <v-content>
       <HangulClocks/>
     </v-content>
+
+    <v-footer class="pa-3">
+      <v-spacer></v-spacer>
+      <div>
+        &copy; {{ new Date().getFullYear() }}
+        Homin Lee &lt;homin.lee@suapapa.net&gt; All rigihts reserved.
+        각 시계의 사진은 각 저작자의 소유 입니다.
+      </div>
+    </v-footer>
   </v-app>
+
 </template>
 
 <script>
