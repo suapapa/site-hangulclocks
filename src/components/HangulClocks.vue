@@ -64,7 +64,7 @@
           href: 'https://play.google.com/store/apps/details?id=com.leejoonhee.hangulclockforandroid'
         },
         {
-          title: '제목: 세운(시) 여러분(계)',
+          title: '세운(시) 여러분(계)',
           author: 'Space_바421',
           image: require('../assets/hangulclock_sewoon.webp'),
           href: 'http://yovisong.wixsite.com/spaceba4/2016-11-homo-laborans'
