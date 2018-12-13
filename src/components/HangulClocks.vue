@@ -2,7 +2,10 @@
   <v-container>
     <v-layout text-xs-center wrap >
 
-      <v-flex xs12 mb-5 v-for="(clk, i) in hangulclocks" :key="i">
+      <v-flex
+        xs12 sm12 md6 lg6 xl4
+        pa-2
+        v-for="(clk, i) in hangulclocks" :key="i">
         <v-card>
           <v-img
             :src="`${clk.image}`"
