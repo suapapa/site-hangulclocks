@@ -6,15 +6,13 @@
         <span class="font-weight-light">여러 분들의 한글시계</span>
       </v-toolbar-title>
       <v-spacer></v-spacer>
-      <!--
       <v-btn
         flat
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
+        href="https://github.com/suapapa/site-hangulclocks/issues/new"
         target="_blank"
       >
-        <span class="mr-2">Latest Release</span>
+        <span class="mr-2">등록요청</span>
       </v-btn>
-      -->
     </v-toolbar>
 
     <v-content>
