@@ -52,6 +52,12 @@
       ],
       hangulclocks: [
         {
+          title: '한글시계 design based on attiny4313a.',
+          author: "cakeng",
+          image: require('../assets/hangulclock_cakeng.jpg'),
+          href: 'https://github.com/cakeng/HangulClock'
+        },
+        {
           title: '너가 있어 아름다운 오늘, 한글시계',
           author: "이상훈",
           image: require('../assets/hangulclock_sanghunlee.png'),
