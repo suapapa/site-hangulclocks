@@ -52,6 +52,12 @@
       ],
       hangulclocks: [
         {
+          title: '세종이 한글을 만들기 위해.. 포기한 이것.. ( 초대형 한글 시계 )',
+          author: "긱블 Geekble",
+          image: require('../assets/hangulclock_geekble.png'),
+          href: 'https://youtu.be/3OnIf-UtNqs'
+        },
+        {
           title: '한글시계 design based on attiny4313a.',
           author: "cakeng",
           image: require('../assets/hangulclock_cakeng.jpg'),
