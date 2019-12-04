@@ -52,6 +52,12 @@
       ],
       hangulclocks: [
         {
+          title: '원목한글시계 한시',
+          author: "쿼터노트",
+          image: require('../assets/hangulclock_quarternote.png'),
+          href: 'https://www.idus.com/w/product/112e60de-29e0-45be-94ce-c5530596fde7'
+        },
+        {
           title: '세종이 한글을 만들기 위해.. 포기한 이것.. ( 초대형 한글 시계 )',
           author: "긱블 Geekble",
           image: require('../assets/hangulclock_geekble.png'),
