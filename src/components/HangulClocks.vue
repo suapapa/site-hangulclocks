@@ -52,6 +52,12 @@
       ],
       hangulclocks: [
         {
+          title: '한글시계-오늘도 수고한 당신에게',
+          author: "Jung-Min An",
+          image: require('../assets/hangulclock_jungminan.png'),
+          href: 'https://github.com/minsOne/HangulClockApp'
+        },
+        {
           title: '원목한글시계 한시',
           author: "쿼터노트",
           image: require('../assets/hangulclock_quarternote.png'),
