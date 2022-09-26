@@ -23,7 +23,7 @@
       <v-spacer></v-spacer>
       <div>
         &copy; {{ new Date().getFullYear() }}
-        Homin Lee &lt;homin.lee@suapapa.net&gt; All rigihts reserved.
+        Homin Lee &lt;ff4500@gmail.com&gt; All rigihts reserved.
         각 시계의 사진은 각 저작자의 소유 입니다.
       </div>
     </v-footer>
