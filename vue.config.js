@@ -1,3 +1,3 @@
 module.exports = {
-  baseUrl: '/'+process.env.URL_PREFIX
+  publicPath: process.env.URL_PREFIX ? `/${process.env.URL_PREFIX}/` : '/'
 };

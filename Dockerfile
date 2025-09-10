@@ -1,4 +1,4 @@
-FROM node:lts-alpine as builder
+FROM node:lts-alpine AS builder
 
 ARG URL_PREFIX
 ENV URL_PREFIX=${URL_PREFIX}
@@ -8,7 +8,7 @@ COPY package.json ./
 RUN npm install
 
 COPY . ./
-RUN sed "s/==URL_PREFIX==/${URL_PREFIX}/" /app/app.conf > app.conf
+RUN sed "s/==URL_PREFIX==/${URL_PREFIX}/" /app/app.conf > /app/app.conf.tmp && mv /app/app.conf.tmp /app/app.conf
 RUN npm run build
 
 # ---
