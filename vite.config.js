@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vuetify from 'vite-plugin-vuetify'
+import yaml from '@rollup/plugin-yaml'
 import { fileURLToPath, URL } from 'node:url'
 
 // https://vitejs.dev/config/
@@ -8,6 +9,7 @@ export default defineConfig({
   plugins: [
     vue(),
     vuetify({ autoImport: true }),
+    yaml(),
   ],
   resolve: {
     alias: {
@@ -21,6 +23,8 @@ export default defineConfig({
       '.ts',
       '.tsx',
       '.vue',
+      '.yaml',
+      '.yml',
     ],
   },
 })

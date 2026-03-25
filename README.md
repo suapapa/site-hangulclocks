@@ -22,11 +22,8 @@
 
 본인이 직접 만든 한글시계나 온라인상에 있는 멋진 한글시계 프로젝트를 제안해 주세요.
 
-1.  [이슈 등록](https://github.com/suapapa/site-hangulclocks/issues) 페이지로 이동합니다.
-2.  다음 내용을 포함하여 새 이슈를 작성해 주세요.
-    *   **제목**: 시계 이름
-    *   **사이트 URL**: 실제 작동하는 웹 주소
-    *   **제작자**: 닉네임 또는 이름
+1.  `src/assets/hangulclocks.yaml` 파일에 새 정보를 추가하십시오.
+2.  이후 PR(Pull Request) 또는 이슈를 통해 등록을 요청하실 수 있습니다.
 
 ## 💻 개발 및 기여 가이드 (Development)
 

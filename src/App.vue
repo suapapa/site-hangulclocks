@@ -21,7 +21,7 @@
     <v-main class="hc-main-content">
       <div class="hc-hero">
         <h2 class="hc-hero-title">시간의 아름다움을 <br/> 한글로 담다</h2>
-        <p class="hc-hero-subtitle">전 세계 창작자들의 독창적인 한글시계를 소개합니다.</p>
+        <p class="hc-hero-subtitle">한글의 아름다움과 시간을 결합한 다양한 한글 시계 프로젝트를 모아보았습니다.</p>
       </div>
       <HangulClocks/>
     </v-main>
@@ -29,7 +29,7 @@
     <footer class="hc-footer">
       <div class="hc-footer-container">
         <div class="hc-footer-credit">
-          &copy; {{ new Date().getFullYear() }} Homin Lee &lt;ff4500@gmail.com&gt;
+          &copy; {{ new Date().getFullYear() }} Homin Lee &lt;homin.crc@gmail.com&gt;
         </div>
         <div class="hc-footer-disclaimer">
           각 시계의 사진은 각 저작자의 소유입니다. All rights reserved.

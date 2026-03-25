@@ -22,9 +22,11 @@ Refer to [MASTER.md](./design-system/MASTER.md) for more details.
 
 - **UI Framework**: Vuetify 4 (Material Design + Custom Glassmorphism)
 - **Build**: Vite 8 / npm (Based on **Node 22 LTS**)
+- **Data Management**: YAML (`@rollup/plugin-yaml`)
 - **Deployment**: Docker (`node:22-alpine` / `nginx:stable-alpine`)
 - **Structure**:
   - `src/components/`: Reusable UI components
+  - `src/assets/`: Static assets and **YAML data files**
   - `src/plugins/`: Vuetify and other plugin configurations
   - `design-system/`: Definition of visual values and design tokens for the project
 

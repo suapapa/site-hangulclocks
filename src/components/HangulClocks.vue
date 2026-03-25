@@ -1,7 +1,7 @@
 <template>
   <v-container class="py-12 px-4">
     <!-- Header/Introduction -->
-    <v-row justify="center" class="mb-8">
+    <!-- <v-row justify="center" class="mb-8">
       <v-col cols="12" md="8" class="text-center">
         <h2 class="text-h3 font-weight-black mb-4 gradient-text">Hangul Clock Collection</h2>
         <p class="text-body-1 text-grey-darken-1 mx-auto" style="max-width: 600px;">
@@ -9,7 +9,7 @@
           각 시계는 창의적인 디자인과 독특한 기술적 구현을 통해 한글을 새롭게 조명합니다.
         </p>
       </v-col>
-    </v-row>
+    </v-row> -->
 
     <!-- Grid of Clocks -->
     <v-row>
@@ -24,7 +24,7 @@
       >
         <v-card
           class="modern-card flex-grow-1"
-          elevation="2"
+          elevation="0"
           rounded="xl"
           :href="clk.href"
           target="_blank"
@@ -37,7 +37,7 @@
               class="card-image"
             >
               <template v-slot:placeholder>
-                <div class="d-flex align-center justify-center fill-height bg-grey-lighten-2">
+                <div class="d-flex align-center justify-center fill-height bg-grey-darken-4">
                   <v-progress-circular indeterminate color="primary"></v-progress-circular>
                 </div>
               </template>
@@ -48,17 +48,9 @@
           </div>
 
           <v-card-text class="pt-6 pb-6">
-            <div class="text-overline text-primary font-weight-bold mb-1">{{ clk.author }}</div>
-            <h3 class="text-h6 font-weight-bold mb-2 text-truncate-2">{{ clk.title }}</h3>
+            <div class="author-label mb-1">{{ clk.author }}</div>
+            <h3 class="text-h6 font-weight-bold mb-0 text-truncate-2">{{ clk.title }}</h3>
           </v-card-text>
-
-          <v-divider class="mx-4"></v-divider>
-
-          <v-card-actions class="px-4 py-3 bg-grey-lighten-5">
-            <span class="text-caption text-grey-darken-1 font-italic">View Source/Details</span>
-            <v-spacer></v-spacer>
-            <v-icon size="small" color="primary">mdi-chevron-right</v-icon>
-          </v-card-actions>
         </v-card>
       </v-col>
     </v-row>
@@ -66,74 +58,7 @@
 </template>
 
 <script setup>
-const hangulclocks = [
-  {
-    title: '한글시계-오늘도 수고한 당신에게',
-    author: "Jung-Min An",
-    imageName: 'hangulclock_jungminan.png',
-    href: 'https://github.com/minsOne/HangulClockApp'
-  },
-  {
-    title: '원목한글시계 한시',
-    author: "쿼터노트",
-    imageName: 'hangulclock_quarternote.png',
-    href: 'https://www.idus.com/w/product/112e60de-29e0-45be-94ce-c5530596fde7'
-  },
-  {
-    title: '세종이 한글을 만들기 위해.. 포기한 이것.. ( 초대형 한글 시계 )',
-    author: "긱블 Geekble",
-    imageName: 'hangulclock_geekble.png',
-    href: 'https://youtu.be/3OnIf-UtNqs'
-  },
-  {
-    title: '한글시계 design based on attiny4313a.',
-    author: "cakeng",
-    imageName: 'hangulclock_cakeng.jpg',
-    href: 'https://github.com/cakeng/HangulClock'
-  },
-  {
-    title: '너가 있어 아름다운 오늘, 한글시계',
-    author: "이상훈",
-    imageName: 'hangulclock_sanghunlee.png',
-    href: 'https://hangulclock.today/'
-  },
-  {
-    title: '한글시계 for Android',
-    author: '이준희',
-    imageName: 'hangulclock_junheelee.png',
-    href: 'https://play.google.com/store/apps/details?id=com.leejoonhee.hangulclockforandroid'
-  },
-  {
-    title: '세운(시) 여러분(계)',
-    author: 'Space_바421',
-    imageName: 'hangulclock_sewoon.webp',
-    href: 'http://yovisong.wixsite.com/spaceba4/2016-11-homo-laborans'
-  },
-  {
-    title: '한글시계 - 한글로 흐르는 시간의 아름다움',
-    author: '대디스랩x이카루스',
-    imageName: 'hangulclock_dlab.jpg',
-    href: 'https://www.wadiz.kr/web/campaign/detail/1240'
-  },
-  {
-    title: '한글시계 만들기',
-    author: "만들마루",
-    imageName: 'hangulclock_mandulmaru.jpeg',
-    href: 'https://blog.naver.com/mandulmaru/221413981408'
-  },
-  {
-    title: '한글 시계 만들기',
-    author: "kocoafab",
-    imageName: 'hangulclock_kocoafab.jpg',
-    href: 'https://kocoafab.cc/make/view/508'
-  },
-  {
-    title: '한글시계(HangulClock)',
-    author: "이호민",
-    imageName: 'hangulclock_hominlee.jpg',
-    href: 'https://github.com/suapapa/hangulclock'
-  }
-]
+import hangulclocks from '@/assets/hangulclocks.yaml'
 
 const getImgUrl = (name) => {
   return new URL(`../assets/${name}`, import.meta.url).href
@@ -142,27 +67,42 @@ const getImgUrl = (name) => {
 
 <style scoped>
 .modern-card {
+  background: rgba(255, 255, 255, 0.04) !important;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
   transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
   overflow: hidden;
   text-decoration: none;
 }
 
 .modern-card:hover {
-  transform: translateY(-12px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.12) !important;
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.08) !important;
+  border-color: rgba(212, 175, 55, 0.4) !important;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3) !important;
+}
+
+.author-label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #D4AF37;
 }
 
 .image-container {
   position: relative;
   overflow: hidden;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .card-image {
-  transition: transform 0.6s ease;
+  transition: transform 0.8s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 .modern-card:hover .card-image {
-  transform: scale(1.1);
+  transform: scale(1.08);
 }
 
 .image-overlay {
@@ -171,22 +111,16 @@ const getImgUrl = (name) => {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0,0,0,0.3);
+  background: rgba(15, 15, 18, 0.4);
   display: flex;
   align-items: center;
   justify-content: center;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.4s ease;
 }
 
 .modern-card:hover .image-overlay {
   opacity: 1;
-}
-
-.gradient-text {
-  background: linear-gradient(45deg, #1867c0, #5cbbf6);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .text-truncate-2 {
@@ -196,5 +130,6 @@ const getImgUrl = (name) => {
   overflow: hidden;
   line-height: 1.4;
   height: 2.8em;
+  color: #F5F5F7;
 }
 </style>
