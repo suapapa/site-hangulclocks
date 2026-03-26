@@ -118,6 +118,9 @@ body {
 .hc-main-content {
   padding-top: 120px !important;
   background: radial-gradient(circle at top center, rgba(212, 175, 55, 0.05), transparent 60%);
+  @media (max-width: 768px) {
+    padding-top: 80px !important;
+  }
 }
 
 .hc-hero {
@@ -125,6 +128,10 @@ body {
   margin: 0 auto 60px;
   padding: 0 40px;
   text-align: center;
+  @media (max-width: 768px) {
+    margin-bottom: 32px;
+    padding: 0 20px;
+  }
 }
 
 .hc-hero-title {
@@ -132,10 +139,15 @@ body {
   font-size: 56px;
   line-height: 1.2;
   font-weight: 700;
+  margin-top: 0;
   margin-bottom: 24px;
   background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.7) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  @media (max-width: 768px) {
+    font-size: 38px;
+    margin-bottom: 16px;
+  }
 }
 
 .hc-hero-subtitle {
@@ -144,6 +156,9 @@ body {
   color: rgba(245, 245, 247, 0.6);
   max-width: 600px;
   margin: 0 auto;
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
 }
 
 // Footer
@@ -175,17 +190,17 @@ body {
 
 // Responsive
 @media (max-width: 768px) {
+  .hc-navbar {
+    height: 64px;
+  }
   .hc-navbar-container {
     padding: 0 20px;
   }
+  .hc-logo {
+    font-size: 20px;
+  }
   .hc-logo-sub {
     display: none;
-  }
-  .hc-hero-title {
-    font-size: 36px;
-  }
-  .hc-hero {
-    padding: 0 20px;
   }
 }
 </style>
