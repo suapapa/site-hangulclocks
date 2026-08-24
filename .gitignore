@@ -1,25 +1,58 @@
-.DS_Store
-node_modules
-/dist
+# Dependencies
+node_modules/
 
-# local env files
-.env.local
-.env.*.local
+# Build
+dist/
+dist-ssr/
+*.local
 
-# Log files
+# Vite / caches
+.vite/
+.cache/
+.temp/
+.turbo/
+.eslintcache
+*.tsbuildinfo
+
+# Env and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Logs
+logs/
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
-# Editor directories and files
-.idea
-.vscode
+# Test / coverage
+coverage/
+.nyc_output/
+
+# OS
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Editors
+.idea/
+.vscode/
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
-*.sw*
+*.swp
+*.swo
+*.sw?
+*~
 
 # Agent
 .agents/
 skills-lock.json
+.codex

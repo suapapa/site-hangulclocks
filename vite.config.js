@@ -11,7 +11,29 @@ export default defineConfig({
     vue(),
     vuetify({ autoImport: true }),
     yaml(),
+    {
+      name: 'strip-csp-in-dev',
+      transformIndexHtml(html, ctx) {
+        if (ctx.server) {
+          return html.replace(
+            /\s*<meta http-equiv="Content-Security-Policy"[^>]*>/i,
+            '',
+          )
+        }
+        return html
+      },
+    },
   ],
+  server: {
+    host: '127.0.0.1',
+    fs: {
+      strict: true,
+      deny: ['.env', '.env.*', '*.pem', '.git'],
+    },
+  },
+  preview: {
+    host: '127.0.0.1',
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))

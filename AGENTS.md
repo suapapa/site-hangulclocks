@@ -21,7 +21,7 @@ Refer to [MASTER.md](./design-system/MASTER.md) for more details.
 ## 🛠 Architecture and Tech Stack
 
 - **UI Framework**: Vuetify 4 (Material Design + Custom Glassmorphism)
-- **Build**: Vite 8 / npm (Based on **Node 22 LTS**)
+- **Build**: Vite 8.2+ / npm (Based on **Node 22 LTS**)
 - **Data Management**: YAML (`@rollup/plugin-yaml`)
 - **Deployment**: Docker (`node:22-alpine` / `nginx:stable-alpine`)
 - **Structure**:
@@ -38,6 +38,12 @@ All AI agents must keep documentation up-to-date in the following situations:
 - When new components or core features are added, changing the appearance or behavior of the project.
 - When the design system in `MASTER.md` is changed, modifying color schemes or layout principles.
 - **The Most Important Rule**: Even without a direct request from the user, if the work being performed deviates from or adds to the existing documentation, those changes must be reflected in the documentation immediately.
+
+## 🔒 Security Notes
+
+- Keep production dependencies patched (`npm audit` / `npm audit fix`).
+- Clock cards only follow `http:`/`https:` URLs and load images from the bundled `src/assets` allowlist.
+- Docker/nginx responses send clickjacking, MIME-sniffing, referrer, and Content-Security-Policy headers. GitHub Pages uses the CSP meta tag in `index.html`.
 
 ## 💻 Local Development Guide
 

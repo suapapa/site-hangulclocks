@@ -34,7 +34,8 @@ WORKDIR /usr/share/nginx/html
 
 # Copy only the built assets and configuration
 COPY --from=builder /app/dist ./dist
-RUN rm /etc/nginx/conf.d/default.conf
+RUN rm /etc/nginx/conf.d/default.conf \
+  && chown -R nginx:nginx /usr/share/nginx/html
 COPY --from=builder /app/app.conf /etc/nginx/conf.d/app.conf
 
 # Security and Networking

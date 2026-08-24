@@ -14,8 +14,8 @@
     <!-- Grid of Clocks -->
     <v-row>
       <v-col
-        v-for="(clk, i) in hangulclocks"
-        :key="i"
+        v-for="clk in clocks"
+        :key="clk.imageName"
         cols="12"
         sm="6"
         lg="4"
@@ -26,12 +26,13 @@
           class="modern-card flex-grow-1"
           elevation="0"
           rounded="xl"
-          :href="clk.href"
-          target="_blank"
+          :href="clk.href || undefined"
+          :target="clk.href ? '_blank' : undefined"
+          rel="noopener noreferrer"
         >
           <div class="image-container">
             <v-img
-              :src="getImgUrl(clk.imageName)"
+              :src="clk.imageSrc"
               height="280"
               cover
               class="card-image"
@@ -58,11 +59,20 @@
 </template>
 
 <script setup>
+import { computed } from 'vue'
 import hangulclocks from '@/assets/hangulclocks.yaml'
+import { clockImageSrc, safeHttpUrl } from '@/utils/safeExternal'
 
-const getImgUrl = (name) => {
-  return new URL(`../assets/${name}`, import.meta.url).href
-}
+const clocks = computed(() =>
+  hangulclocks.flatMap((clk) => {
+    const href = safeHttpUrl(clk.href)
+    const imageSrc = clockImageSrc(clk.imageName)
+    if (!href || !imageSrc) {
+      return []
+    }
+    return [{ ...clk, href, imageSrc }]
+  }),
+)
 </script>
 
 <style scoped>

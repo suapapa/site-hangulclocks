@@ -11,6 +11,7 @@
           class="hc-nav-btn"
           href="https://github.com/suapapa/site-hangulclocks/issues/new"
           target="_blank"
+          rel="noopener noreferrer"
         >
           <v-icon start icon="mdi-plus-circle-outline"></v-icon>
           <span>등록요청</span>
@@ -29,7 +30,7 @@
     <footer class="hc-footer">
       <div class="hc-footer-container">
         <div class="hc-footer-credit">
-          &copy; {{ new Date().getFullYear() }} Homin Lee &lt;homin.crc@gmail.com&gt;
+          &copy; {{ new Date().getFullYear() }} Homin Lee &lt;i@homin.dev&gt;
         </div>
         <div class="hc-footer-disclaimer">
           각 시계의 사진은 각 저작자의 소유입니다. All rights reserved.
