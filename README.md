@@ -13,6 +13,6 @@
 
 ## 개발 및 기여
 
-설치, 빌드, Docker 배포 방법은 [AGENTS.md](./AGENTS.md)를 참고하세요.
+설치, 빌드, 배포(GitHub Actions 및 Docker) 방법은 [AGENTS.md](./AGENTS.md)를 참고하세요.
 
 의존성은 `npm audit`로 점검합니다. 시계 카드 링크는 `http`/`https`만 허용하고, 이미지는 `src/assets`에 번들된 파일만 사용합니다.

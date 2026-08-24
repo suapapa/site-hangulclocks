@@ -62,6 +62,12 @@ npm run dev
 npm run build
 ```
 
+## 🚀 CI/CD & Deployment
+
+### GitHub Pages (Automated via GitHub Actions)
+- Pushing or merging to the `main` branch automatically triggers `.github/workflows/deploy.yml` to build and deploy to GitHub Pages.
+- Workflow uses Node 22 LTS, `npm ci`, and official GitHub Actions Pages artifacts (`actions/deploy-pages`).
+
 ## 🐳 Docker Deployment
 
 The project supports multi-stage builds (`node:22-alpine` and `nginx:stable-alpine`) for GKE and other container environments.
