@@ -2,58 +2,94 @@
   author: "이호민"
   imageName: 'hangulclock_rusty-hangulclock.webp'
   href: 'https://hangulclock.homin.dev'
+  category: "하드웨어 & 공예"
+  tags: ["Rust", "ESP32", "오픈소스"]
+  description: "Rust와 WebAssembly로 정교하게 구현된 반응형 인터랙티브 한글시계"
 
 - title: '한글시계-오늘도 수고한 당신에게'
   author: "Jung-Min An"
   imageName: 'hangulclock_jungminan.webp'
   href: 'https://github.com/minsOne/HangulClockApp'
+  category: "웹 & 앱"
+  tags: ["iOS", "macOS", "Swift"]
+  description: "따뜻한 감성 문구와 함께 애플 생태계에서 시간을 전하는 앱"
 
 - title: '원목한글시계 한시'
   author: "쿼터노트"
   imageName: 'hangulclock_quarternote.webp'
   href: 'https://www.idus.com/w/product/112e60de-29e0-45be-94ce-c5530596fde7'
+  category: "하드웨어 & 공예"
+  tags: ["원목공예", "수제", "조명"]
+  description: "천연 원목의 질감과 은은한 백라이트로 시간을 빚어내는 수제 시계"
 
 - title: '세종이 한글을 만들기 위해.. 포기한 이것.. ( 초대형 한글 시계 )'
   author: "긱블 Geekble"
   imageName: 'hangulclock_geekble.webp'
   href: 'https://youtu.be/3OnIf-UtNqs'
+  category: "하드웨어 & 공예"
+  tags: ["초대형", "메이커", "유튜브"]
+  description: "독창적인 기계 메커니즘과 거대한 스케일로 화제를 모은 메이커 프로젝트"
 
 - title: '한글시계 design based on attiny4313a.'
   author: "cakeng"
   imageName: 'hangulclock_cakeng.webp'
   href: 'https://github.com/cakeng/HangulClock'
+  category: "DIY & 교육"
+  tags: ["AVR", "MCU", "회로설계"]
+  description: "ATtiny 마이크로컨트롤러와 LED 매트릭스 기판으로 만든 소형 임베디드 시계"
 
 - title: '너가 있어 아름다운 오늘, 한글시계'
   author: "이상훈"
   imageName: 'hangulclock_sanghunlee.webp'
   href: 'https://hangulclock.today/'
+  category: "웹 & 앱"
+  tags: ["웹", "인터랙티브", "타이포"]
+  description: "단아한 한글 타이포그래피와 모던한 웹 그래픽으로 표현한 시계"
 
 - title: '한글시계 for Android'
   author: '이준희'
   imageName: 'hangulclock_junheelee.webp'
   href: 'https://play.google.com/store/apps/details?id=com.leejoonhee.hangulclockforandroid'
+  category: "웹 & 앱"
+  tags: ["Android", "위젯", "앱"]
+  description: "안드로이드 홈 화면 위젯과 앱으로 일상에서 만나는 한글시계"
 
 - title: '세운(시) 여러분(계)'
   author: 'Space_바421'
   imageName: 'hangulclock_sewoon.webp'
   href: 'https://yovisong.wixsite.com/spaceba4/2016-11-homo-laborans'
+  category: "하드웨어 & 공예"
+  tags: ["전시", "미디어아트", "세운상가"]
+  description: "세운상가 장인들의 기술과 도시의 시간을 한글 시계 구조로 풀어낸 설치 미술"
 
 - title: '한글시계 - 한글로 흐르는 시간의 아름다움'
   author: '대디스랩x이카루스'
   imageName: 'hangulclock_dlab.webp'
   href: 'https://www.wadiz.kr/web/campaign/detail/1240'
+  category: "하드웨어 & 공예"
+  tags: ["크라우드펀딩", "인테리어", "완제품"]
+  description: "크라우드펀딩을 통해 많은 사랑을 받은 완성도 높은 인테리어 오브제"
 
 - title: '한글시계 만들기'
   author: "만들마루"
   imageName: 'hangulclock_mandulmaru.webp'
   href: 'https://blog.naver.com/mandulmaru/221413981408'
+  category: "DIY & 교육"
+  tags: ["메이커스페이스", "레이저가공", "DIY"]
+  description: "메이커스페이스에서 레이저 커팅과 아두이노로 직접 조립해보는 제작 가이드"
 
 - title: '한글시계 만들기'
   author: "kocoafab"
   imageName: 'hangulclock_kocoafab.webp'
   href: 'https://kocoafab.cc/make/view/508'
+  category: "DIY & 교육"
+  tags: ["아두이노", "네오픽셀", "키트"]
+  description: "아두이노 코딩 교육과 네오픽셀 LED 제어를 배우는 오픈 하드웨어 튜토리얼"
 
 - title: '한글시계(HangulClock)'
   author: "이호민"
   imageName: 'hangulclock_hominlee.webp'
   href: 'https://github.com/suapapa/hangulclock'
+  category: "웹 & 앱"
+  tags: ["Go", "Arduino", "오픈소스"]
+  description: "Go 언어로 구현된 오리지널 한글 시계 알고리즘 및 터미널 렌더러"

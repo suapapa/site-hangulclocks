@@ -32,12 +32,18 @@
 - **Hover Transition**: `all 0.3s cubic-bezier(0.4, 0, 0.2, 1)`
 
 ## Components
-### Header
-- Sticky, blurred background
-- Sophisticated logo placement
+### Header & Navbar
+- Sticky, blurred glass background (`backdrop-filter: blur(24px)`)
+- Refined emblem logo + Antique Gold CTA button with hover glow
 
-### Card
-- Container: Glassmorphism surface
-- Image: High-quality display with hover scale (1.05)
-- Title: Primary/Gold highlight on hover
-- Actions: Subtle but accessible
+### Hero & Live Hangul Clock
+- Split hero architecture: narrative heading with gold gradient + interactive 5x5 Hangul matrix clock (5-minute interval)
+- Real-time time display with Korean typography highlighting and time simulation slider
+
+### Card & Gallery Controls
+- **Glassmorphism Gallery Grid**: 딥 차콜(`#0F0F12`)과 앤틱 골드(`#D4AF37`) 기반의 현대적 미니멀리즘 및 글래스모피즘 인터페이스
+- Category filter chips & instant search input
+- Glassmorphism container with 1px border highlight (`rgba(255, 255, 255, 0.08)`)
+- High-quality image hover scale (1.06) + visit overlay pill
+- Title with Antique Gold hover accent and concise description / tags
+- Responsive empty search state

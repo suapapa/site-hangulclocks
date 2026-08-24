@@ -26,7 +26,9 @@ Refer to [MASTER.md](./design-system/MASTER.md) for more details.
 - **Deployment**: Docker (`node:22-alpine` / `nginx:stable-alpine`)
 - **Structure**:
   - `src/components/`: Reusable UI components
-  - `src/assets/`: Static assets and **YAML data files**
+    - `LiveHangulClock.vue`: Real-time 5x5 Hangul matrix clock with interactive simulator (5-minute interval based on `rusty-hangulclock`)
+    - `HangulClocks.vue`: Filterable archive gallery grid with search & category tabs
+  - `src/assets/`: Static assets and **YAML data files** (`hangulclocks.yaml`)
   - `src/plugins/`: Vuetify and other plugin configurations
   - `design-system/`: Definition of visual values and design tokens for the project
 
